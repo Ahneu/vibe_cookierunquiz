@@ -61,7 +61,18 @@ if (window.visualViewport) {
   window.visualViewport.addEventListener('scroll', updateVisualViewport);
 }
 
+const STORE_URL_ANDROID = 'https://play.google.com/store/apps/details?id=com.devsisters.CookieRunForKakao';
+const STORE_URL_IOS     = 'https://apps.apple.com/kr/app/%EC%BF%A0%ED%82%A4%EB%9F%B0/id608808713';
+
+function getStoreUrl() {
+  const ua = navigator.userAgent;
+  if (/android/i.test(ua)) return STORE_URL_ANDROID;
+  if (/iphone|ipad|ipod/i.test(ua)) return STORE_URL_IOS;
+  return STORE_URL_ANDROID;
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
+  document.getElementById('banner-link').href = getStoreUrl();
   try {
     const res  = await fetch('data/cookies.json');
     const data = await res.json();

@@ -210,6 +210,18 @@ body {
   flex: 1;
 }
 #btn-leaderboard { width: 100%; }
+
+/* ─── Banner ─────────────────────────────────── */
+.banner-link {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+}
+.banner-img {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius);
+}
 .btn-secondary:hover { border-color: var(--secondary); background: #F5EDE4; }
 
 /* ─── Quiz Screen ────────────────────────────── */
