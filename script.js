@@ -49,6 +49,18 @@ let game = {
 let lb = { difficulty: 'easy' };
 
 // ─── 초기화 ────────────────────────────────────
+function updateVisualViewport() {
+  const vv = window.visualViewport;
+  if (!vv) return;
+  document.documentElement.style.setProperty('--vv-height', `${vv.height}px`);
+  document.documentElement.style.setProperty('--vv-offset', `${vv.offsetTop}px`);
+}
+
+if (window.visualViewport) {
+  window.visualViewport.addEventListener('resize', updateVisualViewport);
+  window.visualViewport.addEventListener('scroll', updateVisualViewport);
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     const res  = await fetch('data/cookies.json');

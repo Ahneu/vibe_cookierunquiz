@@ -215,8 +215,8 @@ body {
 /* ─── Quiz Screen ────────────────────────────── */
 #screen-quiz {
   position: fixed;
-  top: 0;
-  bottom: 0;
+  top: var(--vv-offset, 0px);
+  height: var(--vv-height, 100svh);
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -225,6 +225,7 @@ body {
   flex-direction: column;
   overflow: hidden;
   z-index: 100;
+  transition: height 0.2s ease, top 0.2s ease;
 }
 
 #screen-quiz .cookie-wrap {
