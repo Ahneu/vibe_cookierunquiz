@@ -102,10 +102,14 @@ function bindMain() {
     const group = btn.dataset.group;
     if (group === 'lb-difficulty' || group === 'lb-count') return;
     btn.addEventListener('click', () => {
+      if (btn.classList.contains('btn-opt-coming')) {
+        showToast('준비중이에요!');
+        return;
+      }
       document.querySelectorAll(`.btn-opt[data-group="${group}"]`)
         .forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      if (group === 'count')      game.settings.count = parseInt(btn.dataset.value);
+      if (group === 'count')      game.settings.count = btn.dataset.value === 'all' ? 'all' : parseInt(btn.dataset.value);
       if (group === 'difficulty') {
         game.settings.difficulty = btn.dataset.value;
         document.getElementById('difficulty-desc').textContent =
@@ -145,7 +149,7 @@ function startGame() {
   const pool     = allCookies.filter(c => projects.includes(c.project));
   const shuffled = shuffle([...pool]);
 
-  game.questions = shuffled.slice(0, Math.min(count, shuffled.length));
+  game.questions = count === 'all' ? shuffled : shuffled.slice(0, Math.min(count, shuffled.length));
   game.index     = 0;
   game.correct   = 0;
   game.score     = 0;
@@ -408,4 +412,13 @@ function shuffle(arr) {
 
 function escapeHtml(str) {
   return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+let toastTimer = null;
+function showToast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.remove('hidden');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.add('hidden'), 2000);
 }

@@ -211,6 +211,33 @@ body {
 }
 #btn-leaderboard { width: 100%; }
 
+/* ─── Coming Soon button ─────────────────────── */
+.btn-opt-coming {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* ─── Toast ───────────────────────────────────── */
+.toast {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(61, 43, 31, 0.88);
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border-radius: 24px;
+  white-space: nowrap;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.toast.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* ─── Banner ─────────────────────────────────── */
 .banner-link {
   display: block;
