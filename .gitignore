@@ -1,0 +1,14 @@
+# Claude
+.claude/
+
+# Python
+crawler/__pycache__/
+crawler/*.pyc
+*.pyc
+
+# macOS
+.DS_Store
+
+# 기획 문서 (배포 불필요)
+cookiequiz.md
+cookies_input.csv

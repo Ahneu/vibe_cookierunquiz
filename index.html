@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>쿠키런 쿠키 Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 메인 화면 -->
+  <div id="screen-main" class="screen">
+    <div class="main-inner">
+      <div class="logo">
+        <img class="logo-icon" src="CRC1024x.png" alt="쿠키런">
+        <div class="logo-text">
+          <h1 class="logo-title">쿠키런 쿠키 Quiz</h1>
+          <p class="logo-sub">쿠키 이미지를 보고 이름을 맞춰보세요!</p>
+        </div>
+      </div>
+
+      <div class="card settings-card">
+        <div class="setting-row">
+          <span class="setting-label">닉네임</span>
+          <input id="player-name" class="name-input" type="text"
+            placeholder="닉네임을 입력하세요" maxlength="12" autocomplete="off" spellcheck="false">
+        </div>
+        <div class="setting-row">
+          <span class="setting-label">문제 수</span>
+          <div class="btn-group">
+            <button class="btn-opt" data-group="count" data-value="10">10</button>
+            <button class="btn-opt active" data-group="count" data-value="20">20</button>
+            <button class="btn-opt" data-group="count" data-value="30">30</button>
+            <button class="btn-opt" data-group="count" data-value="50">50</button>
+            <button class="btn-opt" data-group="count" data-value="100">100</button>
+          </div>
+        </div>
+        <div class="setting-row">
+          <span class="setting-label">난이도</span>
+          <div class="btn-group">
+            <button class="btn-opt active" data-group="difficulty" data-value="easy">쉬움</button>
+            <button class="btn-opt" data-group="difficulty" data-value="normal">보통</button>
+            <button class="btn-opt" data-group="difficulty" data-value="hard">어려움</button>
+          </div>
+        </div>
+        <p id="difficulty-desc" class="difficulty-desc">쿠키런 클래식 쿠키만 출제돼요</p>
+      </div>
+
+      <button id="btn-start" class="btn-primary" disabled>불러오는 중...</button>
+      <button id="btn-leaderboard" class="btn-secondary">🏆 리더보드</button>
+    </div>
+  </div>
+
+  <!-- 퀴즈 화면 -->
+  <div id="screen-quiz" class="screen hidden">
+    <div class="quiz-topbar">
+      <span id="quiz-num" class="quiz-num">1 / 20</span>
+      <span id="quiz-score" class="quiz-score">0점</span>
+      <span id="quiz-correct" class="quiz-correct">정답 0개</span>
+    </div>
+
+    <div class="timer-track">
+      <div id="timer-bar" class="timer-bar"></div>
+    </div>
+
+    <div class="cookie-wrap">
+      <img id="cookie-img" class="cookie-img" src="" alt="쿠키 이미지">
+    </div>
+
+    <div class="answer-area">
+      <div class="input-row">
+        <input id="answer-input" class="answer-input" type="text"
+          placeholder="쿠키 이름을 입력하세요" autocomplete="off" spellcheck="false">
+        <button id="btn-submit" class="btn-submit">제출</button>
+      </div>
+      <div id="feedback" class="feedback hidden"></div>
+    </div>
+  </div>
+
+  <!-- 결과 화면 -->
+  <div id="screen-result" class="screen hidden">
+    <div class="result-wrap">
+      <h2 class="result-title">결과</h2>
+
+      <div class="result-score-box">
+        <div class="result-score">
+          <span id="res-correct" class="res-correct">0</span>
+          <span class="res-divider">/</span>
+          <span id="res-total" class="res-total">20</span>
+        </div>
+        <div id="res-score" class="res-score-pts">0점</div>
+        <p id="res-grade" class="res-grade"></p>
+      </div>
+
+      <div id="res-percentile" class="res-percentile">상위 --%</div>
+
+      <div id="wrong-section" class="wrong-section"></div>
+
+      <div class="result-btns">
+        <button id="btn-retry" class="btn-primary">다시 하기</button>
+        <button id="btn-main" class="btn-secondary">메인으로</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 리더보드 화면 -->
+  <div id="screen-leaderboard" class="screen hidden">
+    <div class="result-wrap">
+      <h2 class="result-title">🏆 리더보드</h2>
+
+      <div class="lb-filters card">
+        <div class="btn-group">
+          <button class="btn-opt active" data-group="lb-difficulty" data-value="easy">쉬움</button>
+          <button class="btn-opt" data-group="lb-difficulty" data-value="normal">보통</button>
+          <button class="btn-opt" data-group="lb-difficulty" data-value="hard">어려움</button>
+        </div>
+      </div>
+
+      <div id="lb-list" class="lb-list"></div>
+
+      <button id="btn-lb-back" class="btn-secondary">← 돌아가기</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>해당 페이지는 vibe 코딩으로 제작되었습니다.</p>
+    <p>© 2026 Devsisters Corp. All rights reserved.</p>
+    <p>쿠키런은 Devsisters Corp.의 상표입니다.</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
