@@ -9,6 +9,5 @@ crawler/*.pyc
 # macOS
 .DS_Store
 
-# 기획 문서 (배포 불필요)
-cookiequiz.md
+# 기획 문서
 cookies_input.csv
