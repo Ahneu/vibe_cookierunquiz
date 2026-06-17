@@ -33,7 +33,7 @@
 
 /* ─── Base ───────────────────────────────────── */
 body {
-  background: url('epN05_tm01_bg1.png') center / cover fixed;
+  background: url('epN05_tm01_bg1.png') center / cover fixed #74C8E8;
   color: var(--text);
   font-family: 'CookieRun', 'Apple SD Gothic Neo', sans-serif;
   min-height: 100vh;
@@ -136,6 +136,7 @@ body {
 
 .name-input {
   flex: 1;
+  min-width: 0;
   padding: 10px 16px;
   border: 2px solid var(--border);
   border-radius: 50px;
@@ -207,6 +208,7 @@ body {
   transition: all 0.15s;
   flex: 1;
 }
+#btn-leaderboard { width: 100%; }
 .btn-secondary:hover { border-color: var(--secondary); background: #F5EDE4; }
 
 /* ─── Quiz Screen ────────────────────────────── */
@@ -521,7 +523,7 @@ body {
 
 /* ─── Responsive ─────────────────────────────── */
 @media (max-width: 480px) {
-  body { padding: 16px 12px 48px; }
+  body { padding: 16px 12px 48px; background-attachment: scroll; }
   .logo-title { font-size: 2rem; }
   .logo-icon  { font-size: 3rem; }
   .cookie-wrap { min-height: 220px; padding: 16px; }
