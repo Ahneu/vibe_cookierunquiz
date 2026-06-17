@@ -253,6 +253,10 @@ body {
 
 /* ─── Quiz Screen ────────────────────────────── */
 @media (max-width: 480px) {
+  body {
+    padding-top: 10px;
+  }
+
   #screen-quiz {
     position: fixed;
     top: var(--vv-offset, 0px);
