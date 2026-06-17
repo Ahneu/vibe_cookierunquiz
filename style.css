@@ -213,13 +213,18 @@ body {
 .btn-secondary:hover { border-color: var(--secondary); background: #F5EDE4; }
 
 /* ─── Quiz Screen ────────────────────────────── */
-body.quiz-active { overflow: hidden; }
-
 #screen-quiz {
-  height: 100vh;
-  height: 100svh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 520px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  z-index: 100;
 }
 
 #screen-quiz .cookie-wrap {
