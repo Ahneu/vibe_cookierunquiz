@@ -137,6 +137,7 @@ CookieQuiz/
 - [x] Firebase Firestore에 결과 저장 및 리더보드 조회
 - [x] 반응형 디자인 (모바일 대응)
 - [x] GitHub Pages 배포 (https://ahneu.github.io/vibe_cookierunquiz/)
+- [ ] 매우 어려움 난이도 콘텐츠 추가 (버튼은 준비중 상태로 노출 중)
 - [ ] 상위 % 계산 (Firebase 기반 전역 집계로 개선)
 - [ ] 효과음 (선택)
 
@@ -193,3 +194,13 @@ CookieQuiz/
     - 키보드 오픈 시 쿠키 이미지 영역 동적 축소 (--vv-height CSS 변수)
     - 스크롤로 인한 footer 노출 문제 해결
   - 모바일 카드/answer-area 패딩 축소
+
+### 2026-06-18
+- 캡틴 아이스 쿠키 이미지 리소스 교체
+- 스토어 배너 추가 (03_btn_go-cookierun.png)
+  - Android → Play Store, iOS → App Store로 OS 감지 후 분기
+- 매우 어려움 난이도 버튼 추가 (준비중 토스트 팝업)
+- 문제 수 ALL 옵션 추가 (선택 난이도 전체 쿠키 출제)
+- 난이도 설명 문구 변경: "출제돼요" → "등장해요"
+- 모바일 상단 여백 축소 (body padding-top: 24px → 10px)
+- 모바일 키보드 오픈 시 이미지 축소 애니메이션 개선 (cubic-bezier)
