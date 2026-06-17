@@ -371,6 +371,7 @@ function bindResult() {
 function showScreen(name) {
   document.querySelectorAll('.screen').forEach(s => s.classList.add('hidden'));
   document.getElementById(`screen-${name}`).classList.remove('hidden');
+  document.body.classList.toggle('quiz-active', name === 'quiz');
   window.scrollTo(0, 0);
 }
 
