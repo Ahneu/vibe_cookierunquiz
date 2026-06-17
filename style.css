@@ -225,7 +225,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     z-index: 100;
-    transition: height 0.2s ease, top 0.2s ease;
+    transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1), top 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   #screen-quiz .cookie-wrap {
