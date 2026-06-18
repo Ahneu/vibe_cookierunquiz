@@ -252,6 +252,12 @@ body {
     padding-top: 10px;
   }
 
+  .setting-row {
+    align-items: flex-start;
+  }
+  .setting-label {
+    padding-top: 8px;
+  }
   .btn-group {
     flex: 1;
     min-width: 0;
