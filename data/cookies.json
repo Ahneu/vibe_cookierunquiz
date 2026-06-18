@@ -1,27 +1,21 @@
 {
   "cookies": [
     {
-      "id": 1,
-      "name": "용감한 쿠키군",
-      "image": "images/cookies/용감한 쿠키군.png",
-      "project": "쿠키런 클래식"
-    },
-    {
       "id": 2,
       "name": "딸기맛 쿠키",
       "image": "images/cookies/딸기맛 쿠키.png",
       "project": "쿠키런 클래식"
     },
     {
-      "id": 3,
-      "name": "명랑한 쿠키양",
-      "image": "images/cookies/명랑한 쿠키양.png",
-      "project": "쿠키런 클래식"
-    },
-    {
       "id": 4,
       "name": "산타맛 쿠키",
       "image": "images/cookies/산타맛 쿠키.png",
+      "project": "쿠키런 클래식"
+    },
+    {
+      "id": 3,
+      "name": "명랑한 쿠키",
+      "image": "images/cookies/명랑한 쿠키.png",
       "project": "쿠키런 클래식"
     },
     {
@@ -2116,10 +2110,7 @@
       "id": 353,
       "name": "용감한 쿠키",
       "image": "images/cookies/용감한 쿠키.png",
-      "project": "모험의 탑",
-      "aliases": [
-        "용감한 쿠키군"
-      ]
+      "project": "쿠키런 클래식"
     },
     {
       "id": 354,
