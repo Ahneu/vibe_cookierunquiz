@@ -2308,6 +2308,18 @@
       "project": "모험의 탑"
     },
     {
+      "id": 385,
+      "name": "룽샤맛 쿠키",
+      "image": "images/cookies/룽샤맛 쿠키.png",
+      "project": "모험의 탑"
+    },
+    {
+      "id": 386,
+      "name": "블루멜로우맛 쿠키",
+      "image": "images/cookies/블루멜로우맛 쿠키.png",
+      "project": "모험의 탑"
+    },
+    {
       "id": 387,
       "name": "멘톨맛 쿠키",
       "image": "images/cookies/멘톨맛 쿠키.png",
