@@ -147,7 +147,9 @@ function startGame() {
   const pool     = allCookies.filter(c => projects.includes(c.project));
   const shuffled = shuffle([...pool]);
 
-  game.questions = count === 'all' ? shuffled : shuffled.slice(0, Math.min(count, shuffled.length));
+  const take     = count === 'all' ? shuffled.length : Math.min(count, shuffled.length);
+  game.questions = shuffled.slice(0, take);
+  game.pool      = shuffled.slice(take);
   game.index     = 0;
   game.correct   = 0;
   game.score     = 0;
@@ -171,9 +173,14 @@ function showQuestion() {
   img.classList.add('loading');
   img.onload = () => img.classList.remove('loading');
   img.onerror = () => {
-    game.index++;
-    if (game.index >= game.questions.length) showResult();
-    else showQuestion();
+    if (game.pool && game.pool.length > 0) {
+      game.questions[game.index] = game.pool.shift();
+      showQuestion();
+    } else {
+      game.questions.splice(game.index, 1);
+      if (game.index >= game.questions.length) showResult();
+      else showQuestion();
+    }
   };
   img.src = q.image;
 
