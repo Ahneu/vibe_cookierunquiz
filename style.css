@@ -252,10 +252,10 @@ body {
     padding-top: 10px;
   }
 
-  .setting-row {
+  .setting-row-count {
     align-items: flex-start;
   }
-  .setting-label {
+  .setting-row-count .setting-label {
     padding-top: 8px;
   }
   .btn-group {
