@@ -170,6 +170,11 @@ function showQuestion() {
   const img = document.getElementById('cookie-img');
   img.classList.add('loading');
   img.onload = () => img.classList.remove('loading');
+  img.onerror = () => {
+    game.index++;
+    if (game.index >= game.questions.length) showResult();
+    else showQuestion();
+  };
   img.src = q.image;
 
   const input = document.getElementById('answer-input');
