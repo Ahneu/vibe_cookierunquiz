@@ -612,7 +612,7 @@ body {
   .answer-input { font-size: 16px; }
   .card { padding: 16px; }
   .answer-area { padding: 12px; }
-  .logo-title { font-size: 2rem; }
+  .logo-title { font-size: 1.5rem; white-space: nowrap; }
   .logo-icon  { font-size: 3rem; }
   .cookie-wrap { min-height: 220px; padding: 16px; }
   .cookie-img  { max-height: 220px; }
