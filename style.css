@@ -86,6 +86,7 @@ body {
 .logo {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
   background: var(--card);
   backdrop-filter: blur(12px);
@@ -106,11 +107,13 @@ body {
   font-weight: 800;
   color: var(--primary);
   letter-spacing: -0.5px;
+  white-space: nowrap;
 }
 .logo-sub {
-  margin-top: 8px;
+  margin-top: 4px;
   color: var(--muted);
   font-size: 0.95rem;
+  text-align: center;
 }
 
 .card {
@@ -612,7 +615,7 @@ body {
   .answer-input { font-size: 16px; }
   .card { padding: 16px; }
   .answer-area { padding: 12px; }
-  .logo-title { font-size: 1.5rem; white-space: nowrap; }
+  .logo-title { font-size: 1.5rem; }
   .logo-icon  { font-size: 3rem; }
   .cookie-wrap { min-height: 220px; padding: 16px; }
   .cookie-img  { max-height: 220px; }
