@@ -253,6 +253,8 @@ body {
   }
 
   .btn-group {
+    flex: 1;
+    min-width: 0;
     flex-wrap: wrap;
   }
   .btn-group-break {
