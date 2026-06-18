@@ -27,7 +27,6 @@ INPUT_CSV = os.path.join(ROOT_DIR, "cookies_input.csv")
 OUTPUT_DIR = os.path.join(ROOT_DIR, "images", "cookies")
 JSON_PATH = os.path.join(ROOT_DIR, "data", "cookies.json")
 
-COL_GRADE = "쿠키 등급"
 COL_NAME = "쿠키 이름"
 COL_PROJECT = "프로젝트"
 
@@ -35,6 +34,7 @@ PROJECT_PRIORITY = {
     "쿠키런 클래식": 0,
     "쿠키런 킹덤": 1,
     "쿠키런 오븐브레이크": 2,
+    "모험의 탑": 3,
 }
 
 # 이미지 탐색 순서: 킹덤 위키 먼저, 오븐브레이크 위키 fallback
@@ -51,17 +51,16 @@ def deduplicate(cookies):
     for row in cookies:
         name = row[COL_NAME].strip()
         project = row[COL_PROJECT].strip()
-        grade = row[COL_GRADE].strip()
 
         if project not in PROJECT_PRIORITY:
             print(f"[경고] 알 수 없는 프로젝트: '{project}' ({name}) - 건너뜀")
             continue
 
         if name not in merged:
-            merged[name] = {"grade": grade, "project": project}
+            merged[name] = {"project": project}
         else:
             if PROJECT_PRIORITY[project] < PROJECT_PRIORITY[merged[name]["project"]]:
-                merged[name] = {"grade": grade, "project": project}
+                merged[name] = {"project": project}
 
     return merged
 
@@ -161,17 +160,16 @@ def main():
 
     for i, (name, info) in enumerate(cookie_map.items(), 1):
         project = info["project"]
-        grade = info["grade"]
         filename = safe_filename(name)
 
-        print(f"[{i:3d}/{len(cookie_map)}] {name} ({project} / {grade}등급)")
+        print(f"[{i:3d}/{len(cookie_map)}] {name} ({project})")
 
         # 이미 다운로드된 경우 스킵 (macOS NFD 정규화 대응)
         existing = [f for f in os.listdir(OUTPUT_DIR) if unicodedata.normalize('NFC', os.path.splitext(f)[0]) == filename]
         if existing:
             ext = os.path.splitext(existing[0])[1]
             print(f"    이미 존재: {existing[0]} (스킵)")
-            results.append({"id": i, "name": name, "image": f"images/cookies/{filename}{ext}", "project": project, "grade": grade})
+            results.append({"id": i, "name": name, "image": f"images/cookies/{filename}{ext}", "project": project})
             continue
 
         # 이미지 URL 탐색
@@ -187,7 +185,7 @@ def main():
 
         if download_image(img_url, save_path, session):
             print(f"    저장 완료: {filename}{ext}  (위키: {page_title})")
-            results.append({"id": i, "name": name, "image": f"images/cookies/{filename}{ext}", "project": project, "grade": grade})
+            results.append({"id": i, "name": name, "image": f"images/cookies/{filename}{ext}", "project": project})
         else:
             print(f"    다운로드 실패")
             failed.append(name)
