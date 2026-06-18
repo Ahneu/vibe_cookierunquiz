@@ -216,8 +216,11 @@ function normalize(s) { return s.replace(/\s/g, '').toLowerCase(); }
 function checkAnswer(input, cookie) {
   if (!input) return false;
   const ans = normalize(input);
-  if (ans === normalize(cookie.name)) return true;
-  return (cookie.aliases || []).some(a => normalize(a) === ans);
+  const names = [cookie.name, ...(cookie.aliases || [])];
+  return names.some(n => {
+    const norm = normalize(n);
+    return ans === norm || ans === norm.replace(/쿠키$/, '').replace(/\s+$/, '');
+  });
 }
 
 // ─── 제출 ─────────────────────────────────────
