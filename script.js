@@ -171,18 +171,26 @@ function showQuestion() {
 
   const img = document.getElementById('cookie-img');
   img.classList.add('loading');
-  img.onload = () => img.classList.remove('loading');
-  img.onerror = () => {
-    if (game.pool && game.pool.length > 0) {
-      game.questions[game.index] = game.pool.shift();
-      showQuestion();
-    } else {
-      game.questions.splice(game.index, 1);
-      if (game.index >= game.questions.length) showResult();
-      else showQuestion();
-    }
-  };
-  img.src = q.image;
+  if (img._blobUrl) { URL.revokeObjectURL(img._blobUrl); img._blobUrl = null; }
+
+  fetch(q.image)
+    .then(r => { if (!r.ok) throw new Error(); return r.blob(); })
+    .then(blob => {
+      const url = URL.createObjectURL(blob);
+      img._blobUrl = url;
+      img.onload = () => img.classList.remove('loading');
+      img.src = url;
+    })
+    .catch(() => {
+      if (game.pool && game.pool.length > 0) {
+        game.questions[game.index] = game.pool.shift();
+        showQuestion();
+      } else {
+        game.questions.splice(game.index, 1);
+        if (game.index >= game.questions.length) showResult();
+        else showQuestion();
+      }
+    });
 
   const input = document.getElementById('answer-input');
   input.value = '';
