@@ -212,12 +212,6 @@ body {
 }
 #btn-leaderboard { width: 100%; }
 
-/* ─── Coming Soon button ─────────────────────── */
-.btn-opt-coming {
-  opacity: 0.45;
-  cursor: not-allowed;
-}
-
 /* ─── Toast ───────────────────────────────────── */
 .toast {
   position: fixed;

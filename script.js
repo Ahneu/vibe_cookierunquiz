@@ -102,10 +102,6 @@ function bindMain() {
     const group = btn.dataset.group;
     if (group === 'lb-difficulty' || group === 'lb-count') return;
     btn.addEventListener('click', () => {
-      if (btn.classList.contains('btn-opt-coming')) {
-        showToast('준비중이에요!');
-        return;
-      }
       document.querySelectorAll(`.btn-opt[data-group="${group}"]`)
         .forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
