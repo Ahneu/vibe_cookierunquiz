@@ -137,6 +137,8 @@ body {
   font-size: 0.9rem;
   color: var(--secondary);
   white-space: nowrap;
+  width: 60px;
+  flex-shrink: 0;
 }
 
 .name-input {
