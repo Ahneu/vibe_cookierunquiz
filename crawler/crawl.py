@@ -26,6 +26,7 @@ ROOT_DIR = os.path.dirname(SCRIPT_DIR)
 INPUT_CSV = os.path.join(ROOT_DIR, "cookies_input.csv")
 OUTPUT_DIR = os.path.join(ROOT_DIR, "images", "cookies")
 JSON_PATH = os.path.join(ROOT_DIR, "data", "cookies.json")
+ALIASES_PATH = os.path.join(ROOT_DIR, "data", "aliases.json")
 
 COL_NAME = "쿠키 이름"
 COL_PROJECT = "프로젝트"
@@ -191,6 +192,15 @@ def main():
             failed.append(name)
 
         time.sleep(0.3)
+
+    # aliases.json 적용
+    aliases = {}
+    if os.path.exists(ALIASES_PATH):
+        with open(ALIASES_PATH, encoding="utf-8") as f:
+            aliases = json.load(f)
+    for entry in results:
+        if entry["name"] in aliases:
+            entry["aliases"] = aliases[entry["name"]]
 
     # cookies.json 저장
     with open(JSON_PATH, "w", encoding="utf-8") as f:

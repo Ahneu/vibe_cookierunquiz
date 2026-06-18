@@ -2,11 +2,11 @@
   "cookies": [
     {
       "id": 1,
-      "name": "용감한 쿠키군",
+      "name": "용감한 쿠키",
       "image": "images/cookies/용감한 쿠키.png",
       "project": "쿠키런 클래식",
       "aliases": [
-        "용감한 쿠키"
+        "용감한 쿠키군"
       ]
     },
     {
@@ -2117,276 +2117,270 @@
     },
     {
       "id": 353,
-      "name": "용감한 쿠키",
-      "image": "images/cookies/용감한 쿠키.png",
-      "project": "모험의 탑"
-    },
-    {
-      "id": 354,
       "name": "플랜틴맛 쿠키",
       "image": "images/cookies/플랜틴맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 355,
+      "id": 354,
       "name": "크러쉬드페퍼맛 쿠키",
       "image": "images/cookies/크러쉬드페퍼맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 356,
+      "id": 355,
       "name": "캐모마일맛 쿠키",
       "image": "images/cookies/캐모마일맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 357,
+      "id": 356,
       "name": "레몬제스트맛 쿠키",
       "image": "images/cookies/레몬제스트맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 358,
+      "id": 357,
       "name": "허니베어맛 쿠키",
       "image": "images/cookies/허니베어맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 359,
+      "id": 358,
       "name": "스팅두리안맛 쿠키",
       "image": "images/cookies/스팅두리안맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 360,
+      "id": 359,
       "name": "콜라비맛 쿠키",
       "image": "images/cookies/콜라비맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 361,
+      "id": 360,
       "name": "할라피뇨맛 쿠키",
       "image": "images/cookies/할라피뇨맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 362,
+      "id": 361,
       "name": "알사탕맛 쿠키",
       "image": "images/cookies/알사탕맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 363,
+      "id": 362,
       "name": "바질페스토맛 쿠키",
       "image": "images/cookies/바질페스토맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 364,
+      "id": 363,
       "name": "슈가글로브맛 쿠키",
       "image": "images/cookies/슈가글로브맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 365,
+      "id": 364,
       "name": "아이스민트맛 쿠키",
       "image": "images/cookies/아이스민트맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 366,
+      "id": 365,
       "name": "드라이스톤맛 쿠키",
       "image": "images/cookies/드라이스톤맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 367,
+      "id": 366,
       "name": "마블베리맛 쿠키",
       "image": "images/cookies/마블베리맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 368,
+      "id": 367,
       "name": "딸기찹쌀떡맛 쿠키",
       "image": "images/cookies/딸기찹쌀떡맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 369,
+      "id": 368,
       "name": "그린벨맛 쿠키",
       "image": "images/cookies/그린벨맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 370,
+      "id": 369,
       "name": "소닉워터맛 쿠키",
       "image": "images/cookies/소닉워터맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 371,
+      "id": 370,
       "name": "선데맛 쿠키",
       "image": "images/cookies/선데맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 372,
+      "id": 371,
       "name": "바나나로티맛 쿠키",
       "image": "images/cookies/바나나로티맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 373,
+      "id": 372,
       "name": "버터밀크맛 쿠키",
       "image": "images/cookies/버터밀크맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 374,
+      "id": 373,
       "name": "아이리스맛 쿠키",
       "image": "images/cookies/아이리스맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 375,
+      "id": 374,
       "name": "이슬맛 쿠키",
       "image": "images/cookies/이슬맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 376,
+      "id": 375,
       "name": "멜랑크림 쿠키",
       "image": "images/cookies/멜랑크림 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 377,
+      "id": 376,
       "name": "윈드파라거스 쿠키",
       "image": "images/cookies/윈드파라거스 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 378,
+      "id": 377,
       "name": "로스베이컨맛 쿠키",
       "image": "images/cookies/로스베이컨맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 379,
+      "id": 378,
       "name": "흑보리맛 쿠키",
       "image": "images/cookies/흑보리맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 380,
+      "id": 379,
       "name": "스테인드누가맛 쿠키",
       "image": "images/cookies/스테인드누가맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 381,
+      "id": 380,
       "name": "샬롯맛 쿠키",
       "image": "images/cookies/샬롯맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 382,
+      "id": 381,
       "name": "샤이닝베리맛 쿠키",
       "image": "images/cookies/샤이닝베리맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 383,
+      "id": 382,
       "name": "네온데니쉬맛 쿠키",
       "image": "images/cookies/네온데니쉬맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 384,
+      "id": 383,
       "name": "피닉스페퍼 쿠키",
       "image": "images/cookies/피닉스페퍼 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 385,
+      "id": 384,
       "name": "룽샤맛 쿠키",
       "image": "images/cookies/룽샤맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 386,
+      "id": 385,
       "name": "블루멜로우맛 쿠키",
       "image": "images/cookies/블루멜로우맛 쿠키.png",
       "project": "모험의 탑"
     },
     {
-      "id": 387,
+      "id": 386,
       "name": "멘톨맛 쿠키",
       "image": "images/cookies/멘톨맛 쿠키.png",
       "project": "쿠키런 킹덤"
     },
     {
-      "id": 388,
+      "id": 387,
       "name": "탄산수맛 쿠키",
       "image": "images/cookies/탄산수맛 쿠키.png",
       "project": "쿠키런 킹덤"
     },
     {
-      "id": 389,
+      "id": 388,
       "name": "도우엘",
       "image": "images/cookies/도우엘.png",
       "project": "쿠키런 킹덤"
     },
     {
-      "id": 390,
+      "id": 389,
       "name": "차콜맛쿠키",
       "image": "images/cookies/차콜맛쿠키.png",
       "project": "쿠키런 킹덤"
     },
     {
-      "id": 391,
+      "id": 390,
       "name": "사일런트솔트쿠키",
       "image": "images/cookies/사일런트솔트쿠키.png",
       "project": "쿠키런 킹덤"
     },
     {
-      "id": 392,
+      "id": 391,
       "name": "솔트셀러맛쿠키",
       "image": "images/cookies/솔트셀러맛쿠키.png",
       "project": "쿠키런 킹덤"
     },
     {
-      "id": 393,
+      "id": 392,
       "name": "애쉬솔트맛쿠키",
       "image": "images/cookies/애쉬솔트맛쿠키.png",
       "project": "쿠키런 킹덤"
     },
     {
-      "id": 394,
+      "id": 393,
       "name": "몰드도우맛쿠키",
       "image": "images/cookies/몰드도우맛쿠키.png",
       "project": "쿠키런 킹덤"
     },
     {
-      "id": 395,
+      "id": 394,
       "name": "폼폼도우맛쿠키",
       "image": "images/cookies/폼폼도우맛쿠키.png",
       "project": "쿠키런 킹덤"
     },
     {
-      "id": 396,
+      "id": 395,
       "name": "베놈도우맛쿠키",
       "image": "images/cookies/베놈도우맛쿠키.png",
       "project": "쿠키런 킹덤"
     },
     {
-      "id": 397,
+      "id": 396,
       "name": "설탕백조쿠키",
       "image": "images/cookies/설탕백조쿠키.png",
       "project": "쿠키런 킹덤"
     },
     {
-      "id": 398,
+      "id": 397,
       "name": "크루아상맛쿠키",
       "image": "images/cookies/크루아상맛쿠키.png",
       "project": "쿠키런 킹덤"
