@@ -257,6 +257,10 @@ body {
     padding-top: 10px;
   }
 
+  .btn-group {
+    flex-wrap: wrap;
+  }
+
   #screen-quiz {
     position: fixed;
     top: var(--vv-offset, 0px);
