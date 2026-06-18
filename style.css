@@ -154,6 +154,7 @@ body {
 .name-input.error { border-color: var(--wrong); }
 
 .btn-group { display: flex; gap: 8px; }
+.btn-group-break { display: none; }
 
 .btn-opt {
   padding: 8px 16px;
@@ -259,6 +260,11 @@ body {
 
   .btn-group {
     flex-wrap: wrap;
+  }
+  .btn-group-break {
+    display: block;
+    width: 100%;
+    height: 0;
   }
 
   #screen-quiz {
