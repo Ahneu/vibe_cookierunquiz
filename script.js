@@ -8,17 +8,19 @@ const LS_KEY             = 'cq_leaderboard';
 const POINTS_PER_CORRECT = 10;
 
 const DIFFICULTY_PROJECTS = {
-  easy:   ['쿠키런 클래식'],
-  normal: ['쿠키런 클래식', '쿠키런 킹덤'],
-  hard:   ['쿠키런 클래식', '쿠키런 킹덤', '쿠키런 오븐브레이크'],
+  easy:     ['쿠키런 클래식'],
+  normal:   ['쿠키런 클래식', '쿠키런 킹덤'],
+  hard:     ['쿠키런 클래식', '쿠키런 킹덤', '쿠키런 오븐브레이크'],
+  veryhard: ['쿠키런 클래식', '쿠키런 킹덤', '쿠키런 오븐브레이크', '모험의 탑'],
 };
 
-const DIFFICULTY_LABEL = { easy: '쉬움', normal: '보통', hard: '어려움' };
+const DIFFICULTY_LABEL = { easy: '쉬움', normal: '보통', hard: '어려움', veryhard: '더 어려움' };
 
 const DIFFICULTY_DESC = {
-  easy:   '쿠키런 클래식 쿠키만 등장해요',
-  normal: '쿠키런 클래식과 쿠키런 킹덤의 쿠키가 등장해요',
-  hard:   '쿠키런 클래식과 쿠키런 킹덤, 쿠키런 오븐브레이크 쿠키가 등장해요',
+  easy:     '쿠키런 클래식 쿠키만 등장해요',
+  normal:   '쿠키런 클래식과 쿠키런 킹덤의 쿠키가 등장해요',
+  hard:     '쿠키런 클래식과 쿠키런 킹덤, 쿠키런 오븐브레이크 쿠키가 등장해요',
+  veryhard: '쿠키런 클래식, 쿠키런 킹덤, 쿠키런 오븐브레이크, 모험의 탑 쿠키가 등장해요',
 };
 
 function gradeMsg(correct, total) {

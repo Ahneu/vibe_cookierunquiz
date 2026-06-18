@@ -33,7 +33,7 @@
 
 /* ─── Base ───────────────────────────────────── */
 body {
-  background: url('epN05_tm01_bg1.png') center / cover fixed #74C8E8;
+  background: url('images/UI/epN05_tm01_bg1.png') center / cover fixed #74C8E8;
   color: var(--text);
   font-family: 'CookieRun', 'Apple SD Gothic Neo', sans-serif;
   min-height: 100vh;
