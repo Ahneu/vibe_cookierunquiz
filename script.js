@@ -289,7 +289,7 @@ function showResult() {
   const better = all.filter(s => s.correct / s.total < score).length;
   const el     = document.getElementById('res-percentile');
   if (all.length < 3) {
-    el.textContent = `${game.correct}점 (상위 % 집계 중)`;
+    el.textContent = `${game.score}점 (상위 % 집계 중)`;
   } else {
     const pct = Math.round((1 - better / all.length) * 100);
     el.textContent = `상위 ${pct}%`;
