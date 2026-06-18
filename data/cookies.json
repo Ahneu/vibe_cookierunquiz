@@ -3,8 +3,11 @@
     {
       "id": 1,
       "name": "용감한 쿠키군",
-      "image": "images/cookies/용감한 쿠키군.png",
-      "project": "쿠키런 클래식"
+      "image": "images/cookies/용감한 쿠키.png",
+      "project": "쿠키런 클래식",
+      "aliases": [
+        "용감한 쿠키"
+      ]
     },
     {
       "id": 2,
