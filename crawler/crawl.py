@@ -202,6 +202,16 @@ def main():
         if entry["name"] in aliases:
             entry["aliases"] = aliases[entry["name"]]
 
+    # 이미지 파일명 숫자 ID로 리네이밍
+    for entry in results:
+        old_path = entry["image"]
+        ext = os.path.splitext(old_path)[1]
+        new_filename = f"{entry['id']}{ext}"
+        new_path = f"images/cookies/{new_filename}"
+        if os.path.exists(old_path) and old_path != new_path:
+            os.rename(old_path, new_path)
+        entry["image"] = new_path
+
     # cookies.json 저장
     with open(JSON_PATH, "w", encoding="utf-8") as f:
         json.dump({"cookies": results}, f, ensure_ascii=False, indent=2)
