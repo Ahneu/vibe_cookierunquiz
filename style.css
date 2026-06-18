@@ -95,7 +95,7 @@ body {
   padding: 24px;
   width: 100%;
 }
-.logo-icon { width: 100px; height: 100px; object-fit: contain; flex-shrink: 0; border-radius: 24px; }
+.logo-icon { width: 50px; height: 50px; object-fit: contain; flex-shrink: 0; border-radius: 12px; }
 .logo-text { text-align: left; }
 .logo-title {
   font-size: 2.4rem;
