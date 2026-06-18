@@ -85,8 +85,8 @@ body {
 
 .logo {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  flex-direction: column;
+  gap: 8px;
   background: var(--card);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -95,8 +95,12 @@ body {
   padding: 24px;
   width: 100%;
 }
+.logo-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 .logo-icon { width: 50px; height: 50px; object-fit: contain; flex-shrink: 0; border-radius: 12px; }
-.logo-text { text-align: left; }
 .logo-title {
   font-size: 2.4rem;
   font-weight: 800;
